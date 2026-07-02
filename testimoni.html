@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimoni Portofolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f3f7fc;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h4{
+    color:#2563eb;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.title h1{
+    font-size:42px;
+    color:#1f2937;
+}
+
+.title p{
+    color:#6b7280;
+    margin-top:10px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 45px rgba(0,0,0,.15);
+}
+
+.icon{
+    font-size:35px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.text{
+    color:#555;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.star{
+    color:#FFD700;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+}
+
+.profile img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    margin-right:15px;
+}
+
+.profile h3{
+    color:#222;
+}
+
+.profile span{
+    color:#777;
+    font-size:14px;
+}
+
+.card:nth-child(2){
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:white;
+}
+
+.card:nth-child(2) .icon,
+.card:nth-child(2) .text,
+.card:nth-child(2) h3,
+.card:nth-child(2) span{
+    color:white;
+}
+
+.card:nth-child(2) img{
+    border:3px solid white;
+}
+
+@media(max-width:768px){
+
+.title h1{
+    font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<section>
+
+<div class="title">
+    <h4>TESTIMONI</h4>
+    <h1>Apa Kata Klien?</h1>
+    <p>Beberapa ulasan dari klien yang telah menggunakan jasa saya.</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<div class="icon">
+<i class="fas fa-quote-left"></i>
+</div>
+
+<div class="text">
+Website yang dibuat sangat cepat, tampilannya elegan, dan mudah digunakan.
+Saya sangat puas dengan hasil akhirnya.
+</div>
+
+<div class="star">
+★★★★★
+</div>
+
+<div class="profile">
+<img src="https://i.pravatar.cc/100?img=12">
+<div>
+<h3>Ojan</h3>
+<span>CEO Digital Agency</span>
+</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+<i class="fas fa-quote-left"></i>
+</div>
+
+<div class="text">
+Desain sangat modern dan profesional. Komunikasi selama pengerjaan juga sangat baik.
+Saya pasti akan menggunakan jasanya kembali.
+</div>
+
+<div class="star">
+★★★★★
+</div>
+
+<div class="profile">
+<img src="https://i.pravatar.cc/100?img=32">
+<div>
+<h3>Carolline</h3>
+<span>UI/UX Designer</span>
+</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+<i class="fas fa-quote-left"></i>
+</div>
+
+<div class="text">
+Pelayanan cepat, hasil coding rapi, dan website berjalan dengan sangat lancar.
+Rekomendasi untuk siapa saja yang membutuhkan website profesional.
+</div>
+
+<div class="star">
+★★★★★
+</div>
+
+<div class="profile">
+<img src="https://i.pravatar.cc/100?img=45">
+<div>
+<h3>Ghreylizzya</h3>
+<span>Entrepreneur</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
