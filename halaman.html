@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nama Anda</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: #2563eb;
+            filter: blur(180px);
+            opacity: .3;
+            top: -250px;
+            right: -200px;
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #7c3aed;
+            filter: blur(180px);
+            opacity: .25;
+            bottom: -220px;
+            left: -200px;
+            z-index: -1;
+        }
+
+        /* Navbar */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(18px);
+            background: rgba(15, 23, 42, .55);
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #3b82f6;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        /* Hero */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 8%;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h3 {
+            font-size: 22px;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 {
+            font-size: 62px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 35px;
+            max-width: 600px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 18px;
+        }
+
+        .btn {
+            padding: 16px 34px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, .35);
+        }
+
+        .secondary {
+            border: 2px solid #2563eb;
+            color: white;
+        }
+
+        .secondary:hover {
+            background: #2563eb;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            width: 370px;
+            height: 470px;
+            background: rgba(255, 255, 255, .08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, .15);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            50% {
+                transform: translateY(-18px);
+            }
+        }
+
+        .stats {
+            display: flex;
+            gap: 25px;
+            margin-top: 55px;
+        }
+
+        .stat {
+            background: rgba(255, 255, 255, .08);
+            padding: 20px;
+            border-radius: 18px;
+            text-align: center;
+            min-width: 140px;
+        }
+
+        .stat h2 {
+            font-size: 34px;
+            color: #60a5fa;
+        }
+
+        .stat p {
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:900px) {
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 150px;
+            }
+
+            .hero-text h1 {
+                font-size: 45px;
+            }
+
+            .button-group {
+                justify-content: center;
+            }
+
+            .stats {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .card {
+                width: 300px;
+                height: 380px;
+                font-size: 120px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Port<span>folio</span>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h3>Halo</h3>
+
+            <h1>Nama</h1>
+
+            <p>
+                Saya adalah seorang Web Developer yang berfokus pada pembuatan website modern,
+                cepat, responsif, dan memiliki pengalaman pengguna yang profesional.
+            </p>
+
+            <div class="button-group">
+
+                <a href="#" class="btn primary">Lihat Project</a>
+
+                <a href="#" class="btn secondary">Hubungi Saya</a>
+
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h2>50+</h2>
+                    <p>Project</p>
+                </div>
+
+                <div class="stat">
+                    <h2>3+</h2>
+                    <p>Tahun Pengalaman</p>
+                </div>
+
+                <div class="stat">
+                    <h2>100%</h2>
+                    <p>Kepuasan Klien</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="card">
+                👨‍💻
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        const nav = document.querySelector("nav");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 50) {
+
+                nav.style.background = "rgba(15,23,42,.92)";
+
+            } else {
+
+                nav.style.background = "rgba(15,23,42,.55)";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
